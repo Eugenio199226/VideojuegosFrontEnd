@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 @Injectable()
 export class ServicioVideojuego
 {
-    private _videojuegoUrl='localhost:8080/api/validar';
+    private _videojuegoUrl='localhost:777/api/videojuegos';
 	constructor(private _http: HttpClient){}
 	leerListado(): Observable<Videojuegos[]>
 	{
