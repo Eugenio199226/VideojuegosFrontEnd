@@ -1,36 +1,36 @@
 <ul class="videojuegos">
     <li *ngFor="let videojuego of videojuegos"
-      [class.selected]="videojuego === selectedVideojuego"
+      [class.selected]="videojuego === videojuegosRecibidos"
       (click)="onSelect(videojuego)">
       <span class="badge">{{videojuego.id}}</span> {{videojuego.videojuegos}} | {{videojuego.plataforma}}|
       {{videojuego.genero}}|{{videojuego.fecha_lazamiento}}
     </li>
   </ul>
   
-  <div *ngIf="selectedVideojuego">
+  <div *ngIf="videojuegosRecibidos">
   
     <h2>{{selectedVideojuego.videojuegos | uppercase}} Details</h2>
     <div><span>id: </span>{{selectedVideojuego.id}}</div>
     <div>
       <label>videojuegos:
-        <input [(ngModel)]="selectedVideojuego.videojuegos" placeholder="videojuego"/>
+        <input [(ngModel)]="videojuegosRecibidos.videojuegos" placeholder="videojuego"/>
       </label>
     </div>
   
 
       <div>
         <label>plataforma:
-            <input [(ngModel)]="selectedVideojuego.plataforma" placeholder="plataforma"/>
+            <input [(ngModel)]="videojuegosRecibidos.plataforma" placeholder="plataforma"/>
           </label>
       </div>
       <div>
         <label>genero:
-            <input [(ngModel)]="selectedVideojuego.genero" placeholder="genero"/>
+            <input [(ngModel)]="videojuegosRecibidos.genero" placeholder="genero"/>
           </label>
       </div>
       <DIV>
         <label>Fecha de Lanzamiento:
-            <input [(ngModel)]="selectedVideojuego.fecha_lazamiento" placeholder="fecha_lazamiento"/>
+            <input [(ngModel)]="videojuegosRecibidos.fecha_lazamiento" placeholder="fecha_lazamiento"/>
           </label>
       </DIV>
       

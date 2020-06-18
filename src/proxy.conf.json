@@ -1,0 +1,8 @@
+{
+    "/api/videojuegos": {
+        "target": "http://localhost:777/api/videojuegos",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug"
+    }
+}

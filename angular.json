@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "videojuegosFrontEnd"
+    }
+  },
+  "defaultProject": "videojuegosFrontEnd",
+  "cli": {
+    "analytics": "d79d6191-65a0-4a64-a477-920e54ed51e4"
+  }
 }
